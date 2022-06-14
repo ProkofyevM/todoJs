@@ -1,29 +1,34 @@
 body{
    margin-top: 100px;
-   background-color: #fff;
+   background-color: white;
 }
 
 .wrap{
-   
+   border: 1px solid black;
+   height: auto;
    width: 500px;
    margin: auto;
+   background-color: white;
+
 }
 
 .par{
    text-align: center;
-   color: rgba(8, 56, 46, 0.993);
-   font-style: italic;
+   color: black;
+   font-style: normal;
 }
 
 .inp{
+   margin: 0 0 30px 10px;
    width: 70%;
-   border: solid darkgreen;
-   border-radius: 5px;
+   border: 1px solid;
 }
 
 .bt{
-   width: 20%;
-   background-color: rgb(17, 102, 106);
+   width: 23%;
+   color:whitesmoke;
+   background-color: rgb(38, 114, 35);
+   border: 1px solid;
 }
 
 ul{
@@ -33,46 +38,39 @@ ul{
 }
 
 .list{
-   margin-bottom: 50px;
+   margin-bottom: auto;
 }
 
 .btn{
+   height: 17px;
+   width: 80px;
    background: rgb(161, 51, 51);
    border: none;
-   border-radius: 5px;
    color: whitesmoke;
    cursor: pointer;
    position: relative;
    z-index: 11;
 }
 
-.btn1{
-   
-   background: rgb(36, 55, 71);
-   border: none;
-   border-radius: 5px;
-   color: whitesmoke;
-   cursor: pointer;
-   position: relative;
-   z-index: 10;
-}
-
 .li{
+   margin: 10px 10px 10px 10px ;
    padding: 4px 8px;
-   background-color: rgb(88, 142, 95);
-   border: 1px solid rgb(44, 39, 39);
-   border-radius: 5px;
-   margin: 10px 0;
+   background-color: white;
+   border: 1px solid black;
    display: flex;
    justify-content: space-between;
    align-items: center;
    position: relative;
-   width: 100%;
+   width: 460px;
+}
+
+.li::before{
+   content: "•";
+   color:black;
 }
 
 .li-active  {
-   color: rgb(56, 53, 53);
+   color: rgb(39, 38, 38);
    background: rgb(79, 75, 75);
    z-index: 5 ;
 }
-
