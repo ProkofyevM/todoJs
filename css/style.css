@@ -9,13 +9,31 @@ body{
    width: 500px;
    margin: auto;
    background-color: white;
-
 }
 
-.par{
+.time-counte__title{
    text-align: center;
-   color: black;
-   font-style: normal;
+}
+
+.time-count__content{
+   display: flex;
+   justify-content: center;
+   border-bottom: 1px solid black;
+   padding: 0 0 10px 0;
+}
+
+.time-count__val{
+   font-size: 30px;
+   line-height: 25px;
+}
+
+.time-count__separator{
+   margin: 0 15px;
+   line-height: 25px;
+}
+
+.time-count__text{
+   font-size: 10px;
 }
 
 .inp{
@@ -24,6 +42,7 @@ body{
    width: 70%;
    height: 25px;
    border: 1px solid;
+   border-bottom: 1px solid black;
 }
 
 .bt{
@@ -32,6 +51,12 @@ body{
    color:whitesmoke;
    background-color: rgb(38, 114, 35);
    border: 1px solid;
+}
+
+.par{
+   text-align: center;
+   color: black;
+   font-style: normal;
 }
 
 ul{
