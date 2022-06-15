@@ -90,6 +90,23 @@ ul{
    align-items: center;
    position: relative;
    width: 460px;
+   
+}
+
+.li:last-child{
+   animation-name: li;
+   animation-duration: 2s;
+   animation-timing-function: cubic-bezier(0.68,-0.55,0.265,1.55);
+   animation-iteration-count: 1;
+}
+
+@keyframes li{
+   0%{
+      left:0;
+   }
+   100%{
+   left:500px
+   }
 }
 
 .li::before{
