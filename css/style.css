@@ -1,6 +1,6 @@
 body{
    margin-top: 100px;
-   background-color: white;
+   background:  url('../img/images.png');
 }
 
 .wrap{
@@ -104,8 +104,11 @@ ul{
    0%{
       left:0;
    }
+   50%{
+      right:20px
+   }
    100%{
-   left:500px
+   left:10px
    }
 }
 
