@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
-   const day = new Date('Jun 16 2022 00:00:00');
-   //console.log(day.setDate(day.getDate() ));
+   
+   let day = new Date();
+   day.setDate(day.getDate() + 1);
 
    const hoursVal = document.querySelector('.time-count__hours .time-count__val');
    const minutesVal = document.querySelector('.time-count__minutes .time-count__val');
@@ -36,6 +37,7 @@ document.addEventListener('DOMContentLoaded', () => {
       minutesText.textContent = declOfNum (minutes, ['минута', 'минуты', 'минут']);
       secondsText.textContent = declOfNum (seconds, ['секунда', 'секунды', 'секунд']);
    }
+
    timeCount();
    setInterval(timeCount, 1000);
 });
