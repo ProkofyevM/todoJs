@@ -1,7 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
    
-   let day = new Date();
-   day.setDate(day.getDate() + 1);
+   const createDate = () => {
+      let day = new Date();
+      day.setHours(23, 59, 59)
+      return day;
+   }
+   
 
    const hoursVal = document.querySelector('.time-count__hours .time-count__val');
    const minutesVal = document.querySelector('.time-count__minutes .time-count__val');
@@ -17,16 +21,17 @@ document.addEventListener('DOMContentLoaded', () => {
    }
 
    const timeCount = () => {
-      let now = new Date();
-      let leftUntil = day - now;
+      let day = createDate();
+      let currentDate = new Date();
+      let leftUntil = day.getTime() - currentDate.getTime();
 
-      let hours = Math.floor(leftUntil / 1000 / 60 / 60) % 24;
-      let minutes = Math.floor(leftUntil / 1000 / 60) % 60;
-      let seconds = Math.floor(leftUntil / 1000) % 60;
+      let hours = Math.floor(leftUntil / 1000 / 60 / 60);
+      let minutes = Math.floor((leftUntil - hours * 60 * 60 * 1000) / 1000 / 60);
+      let seconds = Math.floor((leftUntil - hours * 60 * 60 *1000) - minutes * 60 * 1000) / 1000;
 
-      (hours < 10) ? hours = `0 ${hours}` : 'help';
-      (minutes < 10) ? minutes = `0 ${minutes}` : 'help';
-      (seconds < 10) ? seconds = `0 ${seconds}` : 'help';
+      (hours < 10) ? hours = `0 ${hours}` : false;
+      (minutes < 10) ? minutes = `0 ${minutes}` : false;
+      (seconds < 10) ? seconds = `0 ${seconds}` : false;
 
       hoursVal.textContent = hours;
       minutesVal.textContent = minutes;
@@ -37,6 +42,7 @@ document.addEventListener('DOMContentLoaded', () => {
       minutesText.textContent = declOfNum (minutes, ['минута', 'минуты', 'минут']);
       secondsText.textContent = declOfNum (seconds, ['секунда', 'секунды', 'секунд']);
    }
+
 
    timeCount();
    setInterval(timeCount, 1000);
