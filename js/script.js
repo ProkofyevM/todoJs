@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
       return day;
    }
    
-
    const hoursVal = document.querySelector('.time-count__hours .time-count__val');
    const minutesVal = document.querySelector('.time-count__minutes .time-count__val');
    const secondsVal = document.querySelector('.time-count__seconds .time-count__val');
@@ -37,12 +36,10 @@ document.addEventListener('DOMContentLoaded', () => {
       minutesVal.textContent = minutes;
       secondsVal.textContent = seconds;
 
-
       hoursText.textContent = declOfNum (hours, ['час', 'часа', 'часов']);
       minutesText.textContent = declOfNum (minutes, ['минута', 'минуты', 'минут']);
       secondsText.textContent = declOfNum (seconds, ['секунда', 'секунды', 'секунд']);
    }
-
 
    timeCount();
    setInterval(timeCount, 1000);
