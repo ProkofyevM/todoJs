@@ -22,5 +22,5 @@
 
 ![HTML](https://img.shields.io/badge/HTML-orange?style=plastic&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS-blue?style=plastic&logo=css3)
-![JS](https://img.shields.io/badge/JS-black?style=plastic&logo=javascript=)
+![JS](https://img.shields.io/badge/JS-black?style=plastic&logo=javascript)
 
