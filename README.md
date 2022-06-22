@@ -9,3 +9,9 @@
 ### Let's see:
 
 > *This is counter* :
+
+![Counter](https://github.com/ProkofyevM/todoJs/blob/main/assets/counter.png)
+
+![Code1](https://github.com/ProkofyevM/todoJs/blob/main/assets/code1.png)
+
+![Code2](https://github.com/ProkofyevM/todoJs/blob/main/assets/code2.png)
