@@ -9,13 +9,14 @@
 ------
 ### Let's see:
 
-> *This is counter* :
+> *this is how it works* :
 
-![Counter](https://github.com/ProkofyevM/todoJs/blob/main/assets/counter.png)
+![Counter](https://github.com/ProkofyevM/todoJs/blob/main/assets/giphy%20(1).gif)
 
-![Code1](https://github.com/ProkofyevM/todoJs/blob/main/assets/code1.png)
+> *and this is the counter code* :
+>  
+![Code1](https://github.com/ProkofyevM/todoJs/blob/main/assets/giphy.gif)
 
-![Code2](https://github.com/ProkofyevM/todoJs/blob/main/assets/code2.png)
 
 -----
 ### My tools:
