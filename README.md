@@ -1,5 +1,5 @@
 # TODO List
-![IMG](https://github.com/ProkofyevM/todoJs/blob/main/assets/TODO.png)
+![IMG](https://github.com/ProkofyevM/todoJs/blob/main/assets/header.gif)
 
 -------
 ### About project:
